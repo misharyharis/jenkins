@@ -1,0 +1,9 @@
+stages {
+stage ('Enable or Disable Cloudwatch Rules'){
+steps (
+withCredentials([[
+Sclass: 'AmazonWebServicesCredentialsBinding credentialsld: 'aws-Jenkins', accessKeyVariable: 'AWS_ACCESS_KEY_ID, secretKeyVariable: 'AWS_SECRET_ACÇESS_KEY'T
+script{
+aws sapi create-bucket --bucket ywgedueudeb --region us-east-1
+}
+}
